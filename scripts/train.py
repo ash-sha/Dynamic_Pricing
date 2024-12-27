@@ -1,3 +1,5 @@
+import os
+
 import mlflow
 import mlflow.sklearn
 import pandas as pd
@@ -17,6 +19,16 @@ def train_model(data_path, target_path):
 
     # Train model
     model = GradientBoostingRegressor(n_estimators=100, random_state=42)
+    # Determine whether we're running in GitHub Actions or locally
+    is_github_actions = os.getenv("GITHUB_ACTIONS") is not None
+
+    # Set the artifact path based on the environment
+    if is_github_actions:
+        artifact_path = os.path.join(os.getenv("GITHUB_WORKSPACE"), "scripts/mlruns/model")
+    else:
+        artifact_path = "model"  # Local path or custom directory
+
+
     model.fit(X_train, y_train)
 
     # Evaluate model
@@ -26,7 +38,8 @@ def train_model(data_path, target_path):
     # Log model and metrics with MLflow
     with mlflow.start_run():
         mlflow.log_metric("MAE", mae)
-        mlflow.sklearn.log_model(model, artifact_path="model", registered_model_name="dynamic_pricing_model")
+        mlflow.sklearn.log_model(model, artifact_path=artifact_path, registered_model_name="dynamic_pricing_model")
+        print(f"Model logged at: {artifact_path}")
         run_id = mlflow.active_run().info.run_id
 
     return model, run_id
