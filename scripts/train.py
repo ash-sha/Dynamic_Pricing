@@ -4,10 +4,12 @@ import mlflow
 import mlflow.sklearn
 import pandas as pd
 from mlflow.models import infer_signature
+from optuna import artifacts
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 
+model_path = os.getenv("model_path","models")
 
 def train_model(data_path, target_path):
     # Load preprocessed data
@@ -24,10 +26,9 @@ def train_model(data_path, target_path):
 
     # Set the artifact path based on the environment
     if is_github_actions:
-        print(os.getenv("GITHUB_WORKSPACE"))
-        artifact_path = "scripts/mlruns/model"
+        artifact_path = f"{model_path}/scripts/mlruns/models"
     else:
-        artifact_path = "model"  # Local path or custom directory
+        artifact_path = "models"  # Local path or custom directory
 
 
     model.fit(X_train, y_train)
@@ -40,7 +41,6 @@ def train_model(data_path, target_path):
     with mlflow.start_run():
         mlflow.log_metric("MAE", mae)
         mlflow.sklearn.log_model(model, artifact_path=artifact_path, registered_model_name="dynamic_pricing_model")
-        print(f"Model logged at: {artifact_path}")
         run_id = mlflow.active_run().info.run_id
 
     return model, run_id
