@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Dynamic_Pricing/Dynamic_Pricing/mlruns/0/9455f1aaf2b54933b03d32ac088b676d/artifacts
+end_time: 1735333342549
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9455f1aaf2b54933b03d32ac088b676d
+run_name: brawny-mare-754
+run_uuid: 9455f1aaf2b54933b03d32ac088b676d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735333341042
+status: 3
+tags: []
+user_id: runner

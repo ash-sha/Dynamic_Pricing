@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1735333342547
+current_stage: None
+description: null
+last_updated_timestamp: 1735333342547
+name: dynamic_pricing_model
+run_id: 9455f1aaf2b54933b03d32ac088b676d
+run_link: null
+source: file:///home/runner/work/Dynamic_Pricing/Dynamic_Pricing/mlruns/0/9455f1aaf2b54933b03d32ac088b676d/artifacts/models/dynamic_pricing_model
+status: READY
+status_message: null
+storage_location: file:///home/runner/work/Dynamic_Pricing/Dynamic_Pricing/mlruns/0/9455f1aaf2b54933b03d32ac088b676d/artifacts/models/dynamic_pricing_model
+user_id: null
+version: 1
