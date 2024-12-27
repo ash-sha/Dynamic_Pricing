@@ -26,7 +26,7 @@ def train_model(data_path, target_path):
 
     # Set the artifact path based on the environment
     if is_github_actions:
-        artifact_path = f"{model_path}/scripts/mlruns/models"
+        artifact_path = model_path
     else:
         artifact_path = "models"  # Local path or custom directory
 

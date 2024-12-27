@@ -12,6 +12,7 @@ jobs:
     env:
       DATA_DIR: ${{ github.workspace }}/data/
       ARTIFACTS_DIR: ${{ github.workspace }}/artifacts/
+      model_path: ${{ github.workspace }}/scripts/mlruns/models
 
     steps:
       - name: Checkout Repository
