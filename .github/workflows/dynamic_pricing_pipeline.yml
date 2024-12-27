@@ -9,10 +9,6 @@ jobs:
   dynamic_pricing_pipeline:
     runs-on: ubuntu-latest
 
-    env:
-      DATA_DIR: ${{ github.workspace }}/data/
-      ARTIFACTS_DIR: ${{ github.workspace }}/artifacts/  # Artifact storage directory
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -36,7 +32,7 @@ jobs:
           git commit -m "Automated model update"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-add_badge_to_readme:
+  add_badge_to_readme:
     runs-on: ubuntu-latest
     needs: dynamic_pricing_pipeline
     if: success()  # Only run if the pipeline job is successful
