@@ -8,7 +8,7 @@ ARTIFACTS_DIR = os.getenv("ARTIFACTS_DIR","/Users/aswathshakthi/PycharmProjects/
 
 def run_inference(input_path, output_path,run_id):
 
-    model = mlflow.pyfunc.load_model((f"runs:/{run_id}/model"))
+    model = mlflow.pyfunc.load_model((f"runs:/{run_id}/models/dynamic_pricing_model"))
 
     preprocessor = joblib.load(f'{ARTIFACTS_DIR}preprocessor.pkl')
     data = pd.read_csv(input_path)

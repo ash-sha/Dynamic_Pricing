@@ -1,6 +1,7 @@
-artifact_location: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic%20Pricing/scripts/mlruns/0
-creation_time: 1735323478018
+artifact_location: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic
+  Pricing/scripts/mlruns/0
+creation_time: 1735330845225
 experiment_id: '0'
-last_update_time: 1735323478018
+last_update_time: 1735330845225
 lifecycle_stage: active
 name: Default

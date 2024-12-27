@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic
+  Pricing/scripts/mlruns/0/2cbbde88cdbe4e9f98d07ad8fe0ccb75/artifacts
+end_time: 1735331076389
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2cbbde88cdbe4e9f98d07ad8fe0ccb75
+run_name: adaptable-chimp-762
+run_uuid: 2cbbde88cdbe4e9f98d07ad8fe0ccb75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735331073439
+status: 3
+tags: []
+user_id: aswathshakthi

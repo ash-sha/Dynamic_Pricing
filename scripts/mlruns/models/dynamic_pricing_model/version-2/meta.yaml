@@ -1,14 +1,15 @@
 aliases: []
-creation_timestamp: 1735324469730
+creation_timestamp: 1735330935050
 current_stage: None
 description: null
-last_updated_timestamp: 1735324469730
+last_updated_timestamp: 1735330935050
 name: dynamic_pricing_model
-run_id: a7954f366b7e42b48422be995e186cfd
+run_id: b14fbcfc081546b5816f6fdc2136be8a
 run_link: null
-source: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic%20Pricing/scripts/mlruns/0/a7954f366b7e42b48422be995e186cfd/artifacts/model
+source: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/scripts/mlruns/0/b14fbcfc081546b5816f6fdc2136be8a/artifacts/models/dynamic_pricing_model
 status: READY
 status_message: null
-storage_location: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic%20Pricing/scripts/mlruns/0/a7954f366b7e42b48422be995e186cfd/artifacts/model
+storage_location: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic
+  Pricing/scripts/mlruns/0/b14fbcfc081546b5816f6fdc2136be8a/artifacts/models/dynamic_pricing_model
 user_id: null
 version: 2

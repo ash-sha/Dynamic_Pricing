@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic
+  Pricing/scripts/mlruns/0/2dc78b2149db42a3905828d619fd360f/artifacts
+end_time: 1735331025568
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2dc78b2149db42a3905828d619fd360f
+run_name: shivering-lynx-487
+run_uuid: 2dc78b2149db42a3905828d619fd360f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735331022449
+status: 3
+tags: []
+user_id: aswathshakthi

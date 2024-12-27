@@ -1,0 +1,20 @@
+artifact_path: models/dynamic_pricing_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.19.0
+model_size_bytes: 135038
+model_uuid: a6c2e74be4da43da998302bd1576b4f0
+run_id: 48c529aa965845678e62f5b03b247cfc
+utc_time_created: '2024-12-27 20:20:45.357021'
