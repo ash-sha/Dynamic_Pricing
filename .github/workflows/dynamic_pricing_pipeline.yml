@@ -1,0 +1,32 @@
+name: Dynamic Pricing Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dynamic_pricing_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Pipeline
+        run: python main.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Automated model update"
+          git push

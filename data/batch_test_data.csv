@@ -1,0 +1,6 @@
+Number_of_Riders,Number_of_Drivers,Location_Category,Customer_Loyalty_Status,Number_of_Past_Rides,Average_Ratings,Time_of_Booking,Vehicle_Type,Expected_Ride_Duration,Historical_Cost_of_Ride
+90,45,Urban,Silver,13,4.47,Night,Premium,90,284.25727302188227
+58,39,Suburban,Silver,72,4.06,Evening,Economy,43,173.87475274940766
+42,31,Rural,Silver,0,3.99,Afternoon,Premium,76,329.7954689622466
+89,28,Rural,Regular,67,4.31,Afternoon,Premium,134,470.2012317513198
+78,22,Rural,Regular,74,3.77,Afternoon,Economy,149,579.6814223640141

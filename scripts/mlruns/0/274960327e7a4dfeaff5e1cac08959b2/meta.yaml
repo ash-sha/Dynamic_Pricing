@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic%20Pricing/scripts/mlruns/0/274960327e7a4dfeaff5e1cac08959b2/artifacts
+end_time: 1735325049044
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 274960327e7a4dfeaff5e1cac08959b2
+run_name: suave-wasp-515
+run_uuid: 274960327e7a4dfeaff5e1cac08959b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735325045972
+status: 3
+tags: []
+user_id: aswathshakthi
