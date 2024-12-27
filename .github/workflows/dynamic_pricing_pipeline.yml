@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Pipeline
-        run: python main.py
+        run: python scripts/main.py
 
       - name: Commit and Push Changes
         run: |
