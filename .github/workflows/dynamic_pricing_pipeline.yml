@@ -35,3 +35,4 @@ jobs:
           git add .
           git commit -m "Automated model update"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
