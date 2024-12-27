@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Dynamic_Pricing/Dynamic_Pricing/mlruns/0/760190d199624bdc9b9d6d0fb4b21c5f/artifacts
+end_time: 1735331787422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 760190d199624bdc9b9d6d0fb4b21c5f
+run_name: legendary-smelt-345
+run_uuid: 760190d199624bdc9b9d6d0fb4b21c5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735331785847
+status: 3
+tags: []
+user_id: runner
