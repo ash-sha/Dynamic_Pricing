@@ -1,10 +1,6 @@
-pandas
-numpy
-scikit-learn
-xgboost
-mlflow
-joblib
-seaborn
-matplotlib
-fastapi
-uvicorn
+joblib==1.4.2
+mlflow==2.19.0
+mlflow_skinny==2.19.0
+optuna==4.1.0
+pandas==2.2.3
+scikit_learn==1.6.0
