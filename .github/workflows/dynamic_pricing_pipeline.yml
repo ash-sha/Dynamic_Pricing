@@ -58,4 +58,4 @@ jobs:
           git config user.email "actions@github.com"
           git add README.md
           git commit -m "Add workflow badge to README"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git --force --all
