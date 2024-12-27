@@ -1,4 +1,4 @@
-name: Dynamic Pricing Workflow
+name: Dynamic Pricing Pipeline
 
 on:
   push:
@@ -6,27 +6,33 @@ on:
       - main
 
 jobs:
-  train-model:
+  dynamic_pricing_pipeline:
     runs-on: ubuntu-latest
 
     env:
-      DATA_DIR: ./data/
-      ARTIFACTS_DIR: ./artifacts/
+      DATA_DIR: ${{ github.workspace }}/data/
+      ARTIFACTS_DIR: ${{ github.workspace }}/artifacts/
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.9
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
 
-    - name: Install dependencies
-      run: pip install -r requirements.txt
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
 
-    - name: Prepare Data Directory
-      run: mkdir -p $DATA_DIR $ARTIFACTS_DIR
+      - name: Run Pipeline
+        run: python scripts/main.py
 
-    - name: Run Main Pipeline
-      run: python scripts/main.py
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Automated model update"
+          git push
+
