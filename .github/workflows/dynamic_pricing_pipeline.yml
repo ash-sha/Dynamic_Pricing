@@ -35,28 +35,3 @@ jobs:
           git add .
           git commit -m "Automated model update"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
-  add_badge_to_readme:
-    runs-on: ubuntu-latest
-    needs: dynamic_pricing_pipeline
-    if: success()  # Only run if the pipeline job is successful
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Add Badge to README
-        run: |
-          # Define the badge URL for the workflow
-          BADGE_URL="![Workflow Status](https://github.com/${{ github.repository }}/actions/workflows/${{ github.workflow }}.yml/badge.svg)"
-          
-          # Add the badge to the README.md
-          echo "$BADGE_URL" >> README.md
-
-      - name: Commit and Push README Update
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add README.md
-          git commit -m "Add workflow badge to README"
-          git pull origin main  # Pull the latest changes before pushing
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git

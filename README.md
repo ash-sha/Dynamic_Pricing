@@ -1,3 +1,6 @@
+
+![example workflow](https://github.com/ash-sha/Dynamic_Pricing/actions/workflows/dynamic_pricing_pipeline.yml/badge.svg)
+
 # Dynamic Pricing Model
 
 Dynamic Pricing is an essential aspect of modern business operations, where prices are dynamically adjusted based on various factors such as demand, seasonality, competition, and customer behavior. This project leverages machine learning to implement a robust Dynamic Pricing model, enabling businesses to optimize their pricing strategies effectively.
