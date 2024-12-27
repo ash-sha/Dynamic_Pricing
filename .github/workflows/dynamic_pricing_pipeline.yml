@@ -9,6 +9,10 @@ jobs:
   dynamic_pricing_pipeline:
     runs-on: ubuntu-latest
 
+    env:
+      DATA_DIR: ${{ github.workspace }}/data/
+      ARTIFACTS_DIR: ${{ github.workspace }}/artifacts/  # Artifact storage directory
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
