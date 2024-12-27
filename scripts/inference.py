@@ -4,7 +4,7 @@ import joblib
 import mlflow.pyfunc
 import pandas as pd
 
-ARTIFACTS_DIR = os.getenv("PROCESSED_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/artifacts/")
+ARTIFACTS_DIR = os.getenv("ARTIFACTS_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/artifacts/")
 
 def run_inference(input_path, output_path,run_id):
 

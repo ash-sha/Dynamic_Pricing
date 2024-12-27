@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 import joblib
 
-ARTIFACTS_DIR = os.getenv("PROCESSED_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/artifacts/")
+ARTIFACTS_DIR = os.getenv("ARTIFACTS_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/artifacts/")
 
 
 def preprocess_data(input_path, output_path):

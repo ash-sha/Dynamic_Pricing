@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 DATA_DIR = os.getenv("DATA_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/data/")
-ARTIFACTS_DIR = os.getenv("PROCESSED_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/artifacts/")
+ARTIFACTS_DIR = os.getenv("ARTIFACTS_DIR","/Users/aswathshakthi/PycharmProjects/Personal_Projects/Dynamic Pricing/artifacts/")
 
 def main():
     # Step 1: Preprocess the Data
